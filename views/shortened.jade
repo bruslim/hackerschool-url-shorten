@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  div(class='row')
+    div(class='col-sm-12')
+      h1(class='page-header')='Shortened URL '
+        small= record.url + ' | ' + stats.length
+  div(class='row')
+    div(class='col-sm-12')
+      table(class='table')
+        tr
+          th Created On
+        each row in stats
+          tr
+            td= row.createdOn
+    

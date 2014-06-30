@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div(class='row')
+    div(class='col-sm-12')
+      h1(class='page-header')='Welcome to HS-Shorten'
+  div(class='row')
+    form(class='col-sm-12' action='/' method='POST')
+      div(class='form-group')
+        label(for='url')='Url to Shorten'
+        input(id='url' name='url' class='form-control' placeholder='http://example.com/example')
+      div(class='form-group')
+        input(type='submit' class='btn btn-primary')='Shorten'
